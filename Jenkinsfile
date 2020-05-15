@@ -1,5 +1,4 @@
-pipeline {
-   stages {
+node{
       stage('Git checkout') {
       	git 'https://github.com/devamanir/fileUpload.git'
          }
@@ -7,5 +6,3 @@ pipeline {
       	sh 'mvn package'
          }
       }
-   }
-}
